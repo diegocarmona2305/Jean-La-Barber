@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jean La Barber</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo"><img src="images/logo.png" alt="Jean La Barber"></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#gallery">Galería</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#location">Ubicación</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg" style="background-image: url('images/hero-bg.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">Estilo &bull; Precisión &bull; Confianza</p>
+      <a href="#contact" class="btn btn-gold">Agenda tu cita</a>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2 class="section-title">Mi Trabajo</h2>
+    <div class="carousel-wrapper">
+      <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#10094;</button>
+      <div class="carousel-track-container">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide"><img src="images/recortes/IMG_0694.jpeg" alt="Recorte 1"></div>
+          <div class="carousel-slide"><img src="images/recortes/IMG_0757.jpeg" alt="Recorte 2"></div>
+          <div class="carousel-slide"><img src="images/recortes/IMG_1562.jpeg" alt="Recorte 3"></div>
+          <div class="carousel-slide"><img src="images/recortes/IMG_1779.jpeg" alt="Recorte 4"></div>
+          <div class="carousel-slide"><img src="images/recortes/IMG_1814.jpeg" alt="Recorte 5"></div>
+          <div class="carousel-slide"><img src="images/recortes/IMG_2231.jpeg" alt="Recorte 6"></div>
+          <div class="carousel-slide"><img src="images/recortes/IMG_2719.jpeg" alt="Recorte 7"></div>
+          <div class="carousel-slide"><img src="images/recortes/IMG_3130.jpeg" alt="Recorte 8"></div>
+          <div class="carousel-slide"><img src="images/recortes/IMG_3217.jpeg" alt="Recorte 9"></div>
+          <div class="carousel-slide"><img src="images/recortes/IMG_3258.jpeg" alt="Recorte 10"></div>
+          <div class="carousel-slide"><img src="images/recortes/IMG_3719.jpeg" alt="Recorte 11"></div>
+          <div class="carousel-slide"><img src="images/recortes/IMG_3774.jpeg" alt="Recorte 12"></div>
+          <div class="carousel-slide"><img src="images/recortes/IMG_3836.jpeg" alt="Recorte 13"></div>
+        </div>
+      </div>
+      <button class="carousel-btn next" id="nextBtn" aria-label="Siguiente">&#10095;</button>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2 class="section-title">Servicios</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">&#9986;</div>
+        <h3>Corte Completo</h3>
+        <p class="service-desc">Corte profesional con acabado perfecto, incluye lavado y estilizado.</p>
+        <p class="service-price">$30 – $35 <span>+ Propina</span></p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">&#128374;</div>
+        <h3>Solo Barba</h3>
+        <p class="service-desc">Perfilado y recorte de barba con navaja y toalla caliente.</p>
+        <p class="service-price">$30</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">&#10024;</div>
+        <h3>Solo Cejas</h3>
+        <p class="service-desc">Diseño y perfilado de cejas para un look limpio.</p>
+        <p class="service-price">$10</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Reserva tu Cita</h2>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <p>Llámame o escríbeme directamente:</p>
+        <a href="tel:9394288802" class="contact-link phone-link">
+          <span class="contact-icon">&#128222;</span> 939-428-8802
+        </a>
+        <a href="https://wa.me/19394288802" target="_blank" class="contact-link whatsapp-link">
+          <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.146.565 4.16 1.555 5.902L.05 23.65a.5.5 0 00.607.612l5.84-1.468A11.948 11.948 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.987 0-3.878-.55-5.527-1.586l-.396-.243-3.466.871.912-3.393-.262-.416A9.712 9.712 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <h3>Solicita tu cita</h3>
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <input type="tel" name="phone" placeholder="Tu número de teléfono" required>
+        <select name="service" required>
+          <option value="" disabled selected>Selecciona un servicio</option>
+          <option value="Corte Completo ($30-$35)">Corte Completo ($30-$35)</option>
+          <option value="Solo Barba ($30)">Solo Barba ($30)</option>
+          <option value="Solo Cejas ($10)">Solo Cejas ($10)</option>
+        </select>
+        <textarea name="message" placeholder="Mensaje adicional (opcional)" rows="3"></textarea>
+        <button type="submit" class="btn btn-gold">Enviar por WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section id="location">
+    <h2 class="section-title">Ubicación</h2>
+    <div class="location-wrapper">
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1895.4!2d-65.8863208!3d18.3864151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c0361b991424a59%3A0x25915a2a58ea313b!2sBodymakers%20Training%20Complex!5e0!3m2!1ses!2spr!4v1700000000000"
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <a href="https://www.google.com/maps/place/Bodymakers+Training+Complex/@18.3864151,-65.8863208,18.12z/data=!4m6!3m5!1s0x8c0361b991424a59:0x25915a2a58ea313b!8m2!3d18.3867693!4d-65.8848156!16s%2Fg%2F11c1qsgmkm?entry=ttu" target="_blank" class="btn btn-outline">
+        Abrir en Google Maps
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="images/logo.png" alt="Jean La Barber" class="footer-logo">
+    <p>&copy; 2026 Jean La Barber. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
