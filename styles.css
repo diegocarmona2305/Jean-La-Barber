@@ -118,6 +118,7 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; }
 #hero {
   position: relative;
   height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,8 +129,8 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
 }
 
