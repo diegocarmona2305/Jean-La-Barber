@@ -131,7 +131,7 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; }
   inset: 0;
   background-image: url('images/hero-bg-mobile.jpeg');
   background-size: cover;
-  background-position: center center
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
