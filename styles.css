@@ -513,14 +513,16 @@ footer p { color: var(--gray); font-size: 0.85rem; }
   gap: 8px;
   padding: 12px 24px;
   border-radius: 8px;
-  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
-  color: white;
+  background: #0a0a0a;
+  border: 1px solid var(--gold);
+  color: var(--gold);
   font-weight: 600;
   font-size: 0.95rem;
   text-decoration: none;
-  transition: opacity 0.3s;
+  transition: all 0.3s;
 }
 
 .btn-instagram:hover {
-  opacity: 0.85;
+  background: var(--gold);
+  color: #0a0a0a;
 }
