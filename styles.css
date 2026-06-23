@@ -129,17 +129,10 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('images/hero-bg.jpg');
+  background-image: url('images/hero-bg-mobile.jpeg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-}
-
-@media (max-width: 1024px) {
-  .hero-bg {
-    background-image: url('images/hero-bg-mobile.jpeg');
-    background-position: center top;
-  }
 }
 
 .hero-overlay {
