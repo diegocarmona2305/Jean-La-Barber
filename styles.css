@@ -501,3 +501,26 @@ footer p { color: var(--gray); font-size: 0.85rem; }
   align-items: center;
   justify-content: center;
 }
+
+.gallery-social {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.btn-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.btn-instagram:hover {
+  opacity: 0.85;
+}
