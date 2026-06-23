@@ -444,3 +444,60 @@ footer p { color: var(--gray); font-size: 0.85rem; }
 
   .carousel-btn { width: 36px; height: 36px; font-size: 1rem; }
 }
+
+/* ===== SOCIAL ===== */
+#social {
+  padding: 80px 24px;
+  background: var(--black);
+  text-align: center;
+}
+
+.social-subtitle {
+  color: var(--gray);
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+.social-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.social-card {
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 40px 32px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-card h3 {
+  color: var(--gold);
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.social-card p {
+  color: var(--gray);
+  margin: 0;
+}
+
+.instagram-icon {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  color: white;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
