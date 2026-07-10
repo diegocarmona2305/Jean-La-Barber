@@ -703,31 +703,16 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; }
   pointer-events: none;
 }
 
-/* Mobile: imagen arriba + miniaturas en 2×2 abajo */
+/* Mobile: mantiene split horizontal, proporciones compactas */
 @media (max-width: 700px) {
   .local-gallery {
-    flex-direction: column;
-    height: auto;
-    gap: 8px;
-  }
-
-  .local-featured {
-    flex: none;
-    width: 100%;
-    height: 60vw;
-  }
-
-  .local-thumbs {
-    flex: none;
-    flex-direction: row;
-    flex-wrap: wrap;
+    height: 72vw;
     gap: 6px;
   }
 
-  .local-thumb {
-    flex: 0 0 calc(50% - 3px);
-    height: 30vw;
-  }
+  .local-featured { flex: 0 0 58%; }
+
+  .local-thumbs { gap: 6px; }
 }
 
 /* placeholder cuando no hay imagen */
@@ -750,6 +735,21 @@ footer {
 .footer-logo { height: 60px; margin-bottom: 12px; }
 
 footer p { color: var(--gray); font-size: 0.85rem; }
+
+.footer-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: rgba(245,245,245,0.35);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  transition: opacity 0.2s;
+}
+.footer-credit img { height: 18px; width: auto; opacity: 0.5; transition: opacity 0.2s; }
+.footer-credit:hover { color: rgba(245,245,245,0.65); }
+.footer-credit:hover img { opacity: 0.8; }
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
